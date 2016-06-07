@@ -1,0 +1,160 @@
+/* tag Styles */
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	html {
+		font-size: 16px;
+	}
+	body {
+		font-size: 62.5%;
+		font-family: 'Gotham-Book';
+	}
+	a {
+		text-decoration: none;
+		display: inline-block;
+	}
+	ul {
+		list-style-type:disc;
+		margin: 1.5em;
+	}
+	ul li {
+		margin: .5em 0;
+	}
+	h1 {
+		font-family: 'Gotham-Light';
+	}
+/* reusable classes */
+	.full-width,
+	.full-page {
+		width: 100%;
+	}
+	.full-height, 
+	.full-page {
+		height: 100vh;
+	}
+	.container {
+		width: 80%;
+		margin: 0 auto;
+	}
+	.vertical {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	.central-text {
+		width: 90vw;
+		margin: 0 auto;
+		text-align: center;
+	}
+	.no-overflow {
+		overflow-x: hidden;
+	}
+	.clear:after {
+		content: "";
+	  	display: table;
+	  	clear: both;
+	}
+	h1.header {
+		font-size: 2.8em;
+		font-weight: normal;
+		color: white;
+	}
+/* cover */
+	.cover {
+		height: inherit;
+		width: inherit;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	.cover-gradient {
+		background: -moz-linear-gradient(-45deg, rgba(41, 121, 255, 1) 0%, rgba(0, 0, 0, 1) 100%);
+		background: -webkit-linear-gradient(-45deg, rgba(41, 121, 255, 1) 0%, rgba(0, 0, 0, 1) 100%);
+		background: linear-gradient(90deg, rgba(41, 121, 255, 1) 0%, rgba(0, 0, 0, 1) 100%);
+		opacity: .75;
+		mix-blend-mode: multiply;
+	}
+	.cover-text {
+		color: white;
+	}
+	h1.logo  {
+		color: #ffffff;
+		font-size: 2.3em;
+		margin-top: 1em;
+		display: inline-block;
+	}
+	h1.logo span {
+		color: #448aff;
+	}
+	.cover-text a {
+		font-size: 1em;
+		font-weight: bold;
+		float: right;
+		margin-top: 3.5em;
+		color: white;
+	}
+	.cover-text h1.header {
+		margin-top: 4.5em;
+		max-width: 280px;
+		font-weight: normal;
+	}
+	.cover-text p {
+		max-width: 300px;
+		font-size: 1.1em;
+		margin-top: 2em;
+	}
+/* main text */
+	.main-text {
+		margin-top: 2em;
+		color: #424242;
+	}
+	.main-text p, 
+	.text-container p {
+		margin-top: 1em;
+		line-height: 1.8;
+		max-width: 300px;
+		font-size: 1.2em;
+	}
+	.main-text li {
+		font-size: 1.2em;
+	}
+/* rent */
+	.rent {
+		height: 30vh;
+		position: relative;
+		margin: 5em 0;
+	}
+	.rent .cover-img,
+	.rent .cover-gradient {
+		height: 30vh;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
+	}
+	.rent .cover-gradient {
+
+	}
+/* font faces */
+	@font-face {
+		font-family: 'Gotham-Book';
+		src: url('fonts/Gotham-Book.eot');
+		src: url('fonts/Gotham-Book.eot?#iefix') format('embedded-opentype'),
+			url('fonts/Gotham-Book.woff') format('woff'),
+			url('fonts/Gotham-Book.ttf') format('truetype');
+		font-weight: normal;
+		font-style: normal;
+	}
+
+	@font-face {
+		font-family: 'Gotham-Light';
+		src: url('fonts/GothamLight.eot');
+		src: url('fonts/GothamLight.eot?#iefix') format('embedded-opentype'),
+			url('fonts/GothamLight.woff') format('woff'),
+			url('fonts/GothamLight.ttf') format('truetype');
+		font-weight: 300;
+		font-style: normal;
+	}
