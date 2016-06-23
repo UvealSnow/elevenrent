@@ -226,13 +226,6 @@
 			overflow: hidden;
 			border-radius: 5px;
 		}
-		.about-gallery {
-			width: 90px;
-			height: 90px;
-			background-color: #535353;
-			display: inline-block;
-			margin: 2em 0 0 0;
-		}
 /* font faces */
 	@font-face {
 		font-family: 'Gotham-Book';
